@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+
+    <!--Linkear el css-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!--Linkear fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <title>Tres en raya </title>
+
+</head>
+
+<body>
+
+    <!-- El html del codigo donde podemos ver varios divs ocultos y las tablas de las puntuacionmes -->
+
+    <div id="cabecera">
+        <h1>TRES EN RAYA</h1>
+    </div>
+    <div id="panel"></div>
+    <div id="cuentaAtras" hidden="false"></div>
+    <div id="pantalla">
+        <div id="pantChico">
+            <div id="chico" hidden="false"></div>
+            <div id="chicofeliz" hidden="false"></div>
+            <div id="chicotriste" hidden="false"></div>
+            <table id="tablaChico" border="1" hidden="false">
+                <tbody>
+                    <tr>
+                        <td>Partidas Ganadas</td>
+                        <td>Partidas Empatadas</td>
+                        <td>Partidas Perdidas</td>
+                    </tr>
+                    <tr>
+                        <td id="ganadasChico">0</td>
+                        <td id="empateChico">0</td>
+                        <td id="derrotaChico">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tablero"></div>
+        <div id="pantChica">
+            <div id="chica" hidden="false"></div>
+            <div id="chicatriste" hidden="false"></div>
+            <div id="chicafeliz" hidden="false"></div>
+
+            <div id="maquina" hidden="false"></div>
+            <table id="tablaChica" border="1" hidden="false">
+                <tbody>
+                    <tr>
+                        <td>Partidas Ganadas</td>
+                        <td>Partidas Empatadas</td>
+                        <td>Partidas Perdidas</td>
+                    </tr>
+                    <tr>
+                        <td id="ganadasChica">0</td>
+                        <td id="empateChica">0</td>
+                        <td id="derrotaChica">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="volverJugar" hidden="true">
+        <button type="button" onclick="reiniciarTablero()" class="paco">VOLVER A JUGAR</button>
+        <input type="button" value="SALIR DEL JUEGO" onclick="location.reload()" class="paco">
+    </div>
+    <br>
+    <br>
+    <div id="menu">
+        <div id="opcion1">
+            <button type="button" onclick="jugadores(1)" class="paco">2 JUGADORES</button>
+            <button type="button" onclick="jugadores(2)" class="paco">1 JUGADOR vs IA (FACIL)</button>
+            <button type="button" onclick="jugadores(3)" class="paco">1 JUGADOR vs IA (DIFICIL)</button>
+        </div>
+        <div id="opcion2" hidden="true">
+            <button type="button" onclick="empezarPartida(6)" class="paco">6 FICHAS</button>
+            <button type="button" onclick="empezarPartida(9)" class="paco">9 FICHAS</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

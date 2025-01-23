@@ -1,0 +1,331 @@
+body {
+
+    background-image: url(imagenes/la-aurora-y-planeta-en-el-cielo_3839x2117_xtrafondos.com.jpg);
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    background-color: black;
+
+}
+
+#pantalla {
+
+
+
+
+
+    display: grid;
+
+    justify-items: center;
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+
+}
+
+#tablero {
+
+    text-align: center;
+
+
+    margin: auto;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+
+
+}
+
+.contenedor {
+
+
+    height: 200px;
+    width: 200px;
+
+    font-size: 170px;
+
+
+
+    font-family: 'Roboto', sans-serif;
+
+    border: 1px solid black;
+
+    background-color: #5c0a90;
+
+    border-radius: 10px;
+
+    -webkit-box-shadow: -4px 4px 33px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 4px 33px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 4px 33px -6px rgba(0, 0, 0, 0.75);
+
+
+
+}
+
+.contenedor:hover {
+
+
+    background-color: #a00970;
+
+
+
+}
+
+#cabecera {
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-image: url(img/img-cabecera.jpg);
+    height: 100px;
+
+}
+
+#menu {
+    border-radius: 9px;
+    display: flex;
+
+}
+
+#opcion1 {
+    margin: auto;
+    padding: 15px;
+}
+
+#opcion2 {
+    margin: auto;
+    padding: 15px;
+}
+
+.paco {
+
+    width: 300px;
+    height: 75px;
+    margin-top: 1.5rem;
+    border-radius: 9px;
+    color: rgb(132, 0, 255);
+    font-weight: bold;
+
+
+
+}
+
+.paco:hover {
+    color: rgb(236, 91, 255);
+}
+
+#volverJugar {
+
+    text-align: center;
+
+}
+
+#panel,
+#cuentaAtras {
+
+
+
+    color: white;
+
+    text-align: center;
+    font-size: 2rem;
+
+
+}
+
+#chico {
+
+    background-image: url(imagenes/chico1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#chicofeliz {
+
+    background-image: url(imagenes/chico2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#chicotriste {
+
+    background-image: url(imagenes/chico3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#chica {
+
+
+    background-image: url(imagenes/chica1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#chicatriste {
+
+
+    background-image: url(imagenes/chica3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#chicafeliz {
+
+
+    background-image: url(imagenes/chica2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#maquina {
+
+
+    background-image: url(imagenes/maquina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+
+
+
+}
+
+#pantChico,
+#pantChica {
+
+
+    display: grid;
+
+    justify-items: center;
+
+    grid-template-rows: 1fr 1fr;
+
+
+}
+
+table,
+thead,
+tbody {
+
+    border: 1px solid white;
+
+    border-collapse: collapse;
+
+}
+
+#tablaChico,
+#tablaChica {
+
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    color: white;
+    text-align: center;
+
+
+
+
+
+}
+
+.text {
+    font-size: 28px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+.parpadea {
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
